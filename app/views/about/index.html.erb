@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <%= stylesheet_link_tag 'styles', media: 'all' %>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <ul>
+            <li><%= link_to "Home", root_path %></li>
+            <li><%= link_to "About", about_path %></li>
+            <li><%= link_to "Projects", projects_path %></li>
+      </ul>
+    </nav>
+
+
+    <!-- About Content -->
+    <div class="container" id="about">
+      <h2>Hey there! 👋</h2>
+      <p>I am on a self development journey</p>
+      <p>Reading 📖 Coding 🧑‍💻 History 🏛️ </p>
+    </div>
+
+    <div  class="skill_container" id="skills">
+      <div class="skills_row">
+        <div class="skill">
+          <%= image_tag "RailsLogo.png", alt: "ruby-rails-icon" %>
+          <h4>RAILS</h4>
+        </div>
+        <div class="skill">
+          <%= image_tag "RubyLogo.png", alt: "ruby-icon" %>
+          <h4>RUBY</h4>
+          </div>
+         <div class="skill">
+            <%= image_tag "GitLogo.png", alt: "git-icon" %>
+            <h4>GIT</h4>
+        </div>
+          <div class="skill">
+            <%= image_tag "JavascriptLogo.png", alt:"js-icon" %>
+            <h4>JAVASCRIPT</h4>
+        </div>
+        <div class="skill">
+          <%= image_tag "ReactLogo.png", alt:"react-icon" %>
+          <h4>REACT</h4>
+        </div>
+        <div class="skill">
+          <%= image_tag "SCSSLogo", alt:"scss-icon" %>
+          <h4>SCSS</h4>
+        </div>
+          <div class="skill">
+          <%= image_tag "sql.png", alt:"sql-icon" %>
+          <h4>SQL</h4>
+        </div>
+          <div class="skill">
+          <%= image_tag "heroku.png", alt:"heroku-icon" %>
+          <h4>Heroku</h4>
+        </div>
+          <div class="skill">
+          <%= image_tag "figma.png", alt:"figma-icon" %>
+          <h4>Figma</h4>
+        </div>
+
+       </div>
+
+
+    </div>
+
+
+    <!-- Social Links -->
+    <footer class="social-footer">
+      <div class="social-links">
+
+        <a href="https://www.linkedin.com/in/maxconru/" target="_blank">
+          <%=image_tag 'linkedin.svg', class: 'social-icon' %>
+        </a>
+        <a href="https://github.com/Mintyfreshmax/profile" target="_blank">
+          <%=image_tag 'github.svg', class: 'social-icon' %>
+        </a>
+        <a href="https://x.com/Max_Conru" target="_blank">
+          <%=image_tag 'twitter.svg', class: 'social-icon' %>
+        </a>
+      </div>
+  </footer>
+      <div class="floating-image-container">
+         <%= image_tag "mewpng.gif", class:"mew-image" %>
+       </div>
+
+</body>
+
+</html>

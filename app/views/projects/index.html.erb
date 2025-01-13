@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+      <ul>
+            <li><%= link_to "Home", root_path %></li>
+            <li><%= link_to "About", about_path %></li>
+            <li><%= link_to "Projects", projects_path %></li>
+      </ul>
+    </nav>
+
+    <div class="container" id="projects">
+        <h2>My Latest Project</h2>
+        <p>Make sure to view it on your phone!</p>
+        <!-- Add your project content here -->
+        <a href='https://www.dojo-app.me/' target='_blank'>
+          <%= image_tag 'Dojo-Home.png', class: 'Dojo' %>
+        <%# <video width="560" height="315" controls>
+          <source src="/Images/Pokemon_project.mp4" type="video/mp4">
+        </video> %>
+
+    </div>
+
+        <footer class="social-footer">
+      <div class="social-links">
+
+        <a href="https://www.linkedin.com/in/maxconru/" target="_blank">
+          <%=image_tag 'linkedin.svg', class: 'social-icon' %>
+        </a>
+        <a href="https://github.com/Mintyfreshmax/profile" target="_blank">
+          <%=image_tag 'github.svg', class: 'social-icon' %>
+        </a>
+        <a href="https://x.com/Max_Conru" target="_blank">
+          <%=image_tag 'twitter.svg', class: 'social-icon' %>
+        </a>
+      </div>
+  </footer>
+</body>
+</html>

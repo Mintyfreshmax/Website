@@ -1,0 +1,49 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Conru</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <%= stylesheet_link_tag 'styles', media: 'all' %>
+  </head>
+<body>
+    <nav class="navbar">
+      <ul>
+            <li><%= link_to "Home", root_path %></li>
+            <li><%= link_to "About", about_path %></li>
+            <li><%= link_to "Projects", projects_path %></li>
+      </ul>
+    </nav>
+
+    <div class="container" id="home">
+        <img src="https://media.licdn.com/dms/image/v2/D5603AQF1mHzOMFKcqw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1731752482966?e=1737590400&v=beta&t=zqT0a1rzuM-gFs83vBjgT1ByN7QVpFNVluCFCyBXVAo"
+             alt="Profile-pic" class="profile-pic">
+        <div class="moving-gif">
+      <%= image_tag "pikachu-pokemon.gif", width: 50 %>
+    </div>
+
+        <h5>Development | Entrepeneur | Explorer</h5>
+
+    </div>
+
+
+
+
+    <footer class="social-footer">
+      <div class="social-links">
+
+        <a href="https://www.linkedin.com/in/maxconru/" target="_blank">
+          <%=image_tag 'linkedin.svg', class: 'social-icon' %>
+        </a>
+        <a href="https://github.com/Mintyfreshmax/profile" target="_blank">
+          <%=image_tag 'github.svg', class: 'social-icon' %>
+        </a>
+        <a href="https://x.com/Max_Conru" target="_blank">
+          <%=image_tag 'twitter.svg', class: 'social-icon' %>
+        </a>
+      </div>
+  </footer>
+</body>
+</html>
